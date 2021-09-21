@@ -1,0 +1,383 @@
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  /* Does NOT work on Safari */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.primary-heading,
+.secondary-heading,
+.tartiary-heading {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.primary-heading {
+  font-size: 6.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.tartiary-heading {
+  font-size: 2.4rem;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+  margin-left: auto;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.header {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-ul {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  font-size: 1.6rem;
+  color: #ddd;
+  padding: 1.2rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.header-list {
+  text-decoration: none;
+  color: #fff;
+}
+.nav {
+  background-color: #333;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url(img/showcase.jpeg) no-repeat center/cover;
+  width: 100%;
+  /* background-attachment: fixed; */
+}
+
+.hero-description,
+.featured-description,
+.collection-description,
+.entertain-description {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.hero-box {
+  padding-top: 25vh;
+}
+
+.section-featured {
+  background-color: #333;
+  color: #fff;
+  padding-top: 4.8rem;
+}
+
+.featured-heading {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+}
+
+.btn:link,
+.btn:active {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.6rem 1.2rem;
+}
+
+.btn-featured:link,
+.btn-featured:active {
+  background-color: #b90415;
+}
+.btn-collection:link,
+.btn-collection:active {
+  background-color: #103063;
+}
+
+.btn {
+  color: #fff;
+  align-self: center;
+}
+
+.featured {
+  padding: 0 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.featured-epilogue {
+  font-size: 1.4rem;
+}
+
+.section-featured .secondary-heading {
+  font-size: 3.6rem;
+}
+
+.featured .secondary-heading {
+  margin-bottom: 1.2rem;
+}
+
+.featured-img,
+.collection-img {
+  padding-bottom: 3.6rem;
+  width: 100%;
+}
+
+.featured-img {
+  transform: translatex(-1.6rem);
+}
+
+.section-collection .tartiary-heading {
+  color: #333;
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin: 3.2rem 0;
+}
+
+.section-collection .collection-description {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+}
+
+.section-entertain {
+  background: url(img/section-bg.jpeg) no-repeat bottom/cover;
+  padding: 15rem 0;
+}
+
+.section-entertain .tartiary-heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin: 3.2rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3.4rem;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.h4 {
+  padding: 2.4rem 2.4rem 2.4rem 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.cards-description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 1.6rem 0;
+}
+
+.btn-cards {
+  font-size: 1.6rem;
+  color: #103063;
+  text-decoration: none;
+}
+
+.cards-icon {
+  width: 2rem;
+  font-weight: 700;
+  color: #103063;
+}
+
+.cards-button {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(51, 51, 51, 0.3);
+  padding-top: 1.6rem;
+}
+
+.section-cards {
+  margin-bottom: 4.6rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4.6rem;
+  gap: 8rem;
+}
+
+.section-footer {
+  background-color: #252529;
+  color: #bbb;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer-end {
+  background-color: #333;
+  color: #fff;
+  padding: 1.6rem 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 54em) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 30em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav {
+    background-color: rgba(51, 51, 51, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header-ul {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    header-list: 3rem;
+  }
+}
