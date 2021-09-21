@@ -223,7 +223,7 @@ body {
   color: #333;
   font-size: 3.6rem;
   font-weight: 600;
-  margin: 3.2rem 0;
+  padding: 4.2rem 0;
 }
 
 .section-collection .collection-description {
@@ -271,6 +271,11 @@ body {
   font-size: 1.6rem;
   color: #103063;
   text-decoration: none;
+}
+
+.btn-cards:hover,
+.btn-cards:active {
+  color: rgba(16, 48, 99, 0.8);
 }
 
 .cards-icon {
