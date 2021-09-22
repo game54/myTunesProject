@@ -50,11 +50,70 @@ body {
 .primary-heading {
   font-size: 6.2rem;
   margin-bottom: 4.8rem;
+  animation-name: moveInTop;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translatex(+100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.hero-description {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
 .secondary-heading {
   font-size: 3rem;
   margin-bottom: 3.2rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
 .tartiary-heading {
