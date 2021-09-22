@@ -184,7 +184,7 @@ body {
 
 .hero-section {
   height: 100vh;
-  background: url(img/showcase.jpeg) no-repeat center/cover;
+  background: url(img/showcase.webp) no-repeat center/cover;
   width: 100%;
   /* background-attachment: fixed; */
 }
