@@ -502,7 +502,7 @@ body {
 }
 
 @media (max-width: 75em) {
-  .no-flexbox-gap .header-ul-list li:not(:last-child) {
+  .no-flexbox-gap .header-ul li:not(:last-child) {
     margin-right: 3.2rem;
   }
 }
